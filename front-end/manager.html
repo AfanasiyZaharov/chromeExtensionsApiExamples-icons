@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main</title>
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap.min.css">
+	<script type="text/javascript" src="../lib/jquery.js"></script>
+	<script type="text/javascript" src = "manager.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+	<div class = "container">
+		<h1>Change icon</h1>
+
+		<img src="http://www.socialtalent.co/wp-content/uploads/2015/02/icon320x320.png" height = "50"  class = "social" width="50">
+  		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/2000px-Linkedin_icon.svg.png" height = "50" width="50" class = "social">
+  		<img src="http://designshack.net/wp-content/uploads/larrybird-2.jpg" height = "50" width="50" class = "social">
+  		<img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" height = "50" width="50" class = "social">
+  		<Br>
+  		<label for="set-icon-url">Your icons url:</label>
+		<input  class="form-control" id="set-icon-url">
+
+		<input type="radio" value="this-page" id = "type-change-one" name = "check-icon" checked="checked"> For this page<Br>
+   		<input type="radio" value="all-pages" id = "type-change-all" name = "check-icon"> For all pages<Br>
+
+		<button class="btn btn-default" id = "icon-change">Change icon</button>
+
+
+		<h1>Set title on icon</h1>
+		<input type="radio" value="this-page" id = "type-change-one" name = "check-title" checked="checked"> For this page<Br>
+   		<input type="radio" value="all-pages" id = "type-change-all" name = "check-title"> For all pages<Br>
+   		<label for="set-title">Your characters:</label>
+		<input  class="form-control" id="set-title">
+		<button class = "btn btn-default" id = "icon-set-title">Set</button>
+
+
+		<h1>Set characters on icon</h1>
+		<input type="radio" value="this-page" id = "type-change-one" name = "check-char" checked="checked"> For this page<Br>
+   		<input type="radio" value="all-pages" id = "type-change-all" name = "check-char"> For all pages<Br>
+		<label for="set-numbers">Your characters:</label>
+		</br>
+  		<input  class="form-control" id="set-numbers">
+  		<button class = "btn btn-default" id = "icon-set-numbers">Set</button>
+  		</br>
+  		</br>
+  		<button class = "btn btn-danger" id = "back-up">Back up</button>
+	</div>
+
+</body>
+</html>

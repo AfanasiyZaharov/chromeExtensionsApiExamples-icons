@@ -1,0 +1,19 @@
+{
+  "name" : "chrome api example",
+  "version" : "0.1",
+  "description" : "example",
+  "permissions": ["tabs", "webRequest", "webRequestBlocking", "https://*/*", "http://*/*", "history"],
+  "browser_action": {
+    "default_icon": "icons/icon.png"
+  },
+    "background": {
+    "scripts": ["background/background.js"]
+  },
+  "content_scripts": [
+    { 
+     "matches": ["https://*/*", "http://*/*"],
+     "js": ["lib/jquery.js"]
+     }
+    ],
+      "manifest_version": 2
+}
