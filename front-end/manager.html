@@ -4,7 +4,8 @@
 	<title>Main</title>
 	<link rel="stylesheet" type="text/css" href="../lib/bootstrap.min.css">
 	<script type="text/javascript" src="../lib/jquery.js"></script>
-	<script type="text/javascript" src = "manager.js"></script>
+	<script type="text/javascript" src="lib.js"></script>
+	<script type="text/javascript" src = "manager2.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
@@ -19,26 +20,32 @@
   		<label for="set-icon-url">Your icons url:</label>
 		<input  class="form-control" id="set-icon-url">
 
-		<input type="radio" value="this-page" id = "type-change-one" name = "check-icon" checked="checked"> For this page<Br>
-   		<input type="radio" value="all-pages" id = "type-change-all" name = "check-icon"> For all pages<Br>
+		<input type="radio" value="this-page" id = "type-change-one" name = "check-icon" checked="checked" class = "select-set-icon"> For this page<Br>
+   		<input type="radio" value="all-pages" id = "type-change-all" name = "check-icon" class = "select-set-icon"> For all pages<Br>
+   		<textarea id = "eval-set-icon" class = "eval"></textarea>
+   		<br>
+   		<button class="btn btn-default" id = "test-eval">Change icon</button>
+   		<br>
 
-		<button class="btn btn-default" id = "icon-change">Change icon</button>
+		
 
 
 		<h1>Set title on icon</h1>
-		<input type="radio" value="this-page" id = "type-change-one" name = "check-title" checked="checked"> For this page<Br>
-   		<input type="radio" value="all-pages" id = "type-change-all" name = "check-title"> For all pages<Br>
+		<input type="radio" value="this-page" id = "type-change-one" name = "check-title" checked="checked" class = "select-set-title"> For this page<Br>
+   		<input type="radio" value="all-pages" id = "type-change-all" name = "check-title" class="select-set-title"> For all pages<Br>
    		<label for="set-title">Your characters:</label>
 		<input  class="form-control" id="set-title">
+		<textarea id = "eval-set-title" class = "eval"></textarea>
 		<button class = "btn btn-default" id = "icon-set-title">Set</button>
 
 
 		<h1>Set characters on icon</h1>
-		<input type="radio" value="this-page" id = "type-change-one" name = "check-char" checked="checked"> For this page<Br>
-   		<input type="radio" value="all-pages" id = "type-change-all" name = "check-char"> For all pages<Br>
+		<input type="radio" value="this-page" id = "type-change-one" name = "check-char" checked="checked" class="select-set-char"> For this page<Br>
+   		<input type="radio" value="all-pages" id = "type-change-all" name = "check-char" class="select-set-char"> For all pages<Br>
 		<label for="set-numbers">Your characters:</label>
 		</br>
   		<input  class="form-control" id="set-numbers">
+  		<textarea id = "eval-set-char" class = "eval"></textarea>
   		<button class = "btn btn-default" id = "icon-set-numbers">Set</button>
   		</br>
   		</br>
